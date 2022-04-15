@@ -1,0 +1,49 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reStart, Some(642371fe-e92a-457e-97bc-7b54eb5de490), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: reStart[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\macko\Desktop\SkalaFolder\mackowiak-mateusz\kol\target\scala-2.13\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\macko\Desktop\SkalaFolder\mackowiak-mateusz\kol\src\main\scala\Zad1.scala:114:28: not enough arguments for method apply: (liczbaPracownikow: Int, liczbaIteracji: Int, akumulatorWyniku: akka.actor.ActorRef): Zad1.InitManager in object InitManager.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameter akumulatorWyniku.[0m
+[0m[[0m[31merror[0m] [0m[0m      manager ! InitManager(10,100)[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\macko\Desktop\SkalaFolder\mackowiak-mateusz\kol\src\main\scala\Zad1.scala:17:83: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method apply,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m        val listaPracownikow=for (i <- 0 to liczbaN-1) yield context.actorOf(Props[Pracownik],"pracownik_"+i)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\macko\Desktop\SkalaFolder\mackowiak-mateusz\kol\src\main\scala\Zad1.scala:21:81: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method apply,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m        context.become(agreguj(listaPracownikow.toList,0,0,context.actorOf(Props[KumulatorWyniku], "kumulator"),liczbaIteracji,0))[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\macko\Desktop\SkalaFolder\mackowiak-mateusz\kol\src\main\scala\Zad1.scala:22:99: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method nextFloat,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m        for (i <- 0 to listaPracownikow.length-1) listaPracownikow(i) ! InitPracownik(util.Random.nextFloat.toFloat,util.Random.nextFloat.toFloat)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\macko\Desktop\SkalaFolder\mackowiak-mateusz\kol\src\main\scala\Zad1.scala:22:129: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method nextFloat,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m        for (i <- 0 to listaPracownikow.length-1) listaPracownikow(i) ! InitPracownik(util.Random.nextFloat.toFloat,util.Random.nextFloat.toFloat)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                                                ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\macko\Desktop\SkalaFolder\mackowiak-mateusz\kol\src\main\scala\Zad1.scala:51:101: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method nextFloat,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m          for (i <- 0 to listaPracownikow.length-1) listaPracownikow(i) ! InitPracownik(util.Random.nextFloat.toFloat,util.Random.nextFloat.toFloat)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\macko\Desktop\SkalaFolder\mackowiak-mateusz\kol\src\main\scala\Zad1.scala:51:131: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method nextFloat,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m          for (i <- 0 to listaPracownikow.length-1) listaPracownikow(i) ! InitPracownik(util.Random.nextFloat.toFloat,util.Random.nextFloat.toFloat)[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                                                                  ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\macko\Desktop\SkalaFolder\mackowiak-mateusz\kol\src\main\scala\Zad1.scala:113:39: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method apply,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m    val manager = system.actorOf(Props[Manager], "Manager")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m7 warnings found[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 2021-06-11 16:51:06[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
